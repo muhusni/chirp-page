@@ -8,38 +8,214 @@
     <link rel="stylesheet" href="css/style.css">
 </head>
 
-<body class="font-inter">
+<body class="font-inter bg-cream">
     <header>
-        <nav class="container flex items-center mt-8 sm:mt-12">
+        <nav class="container flex items-center pt-8 sm:pt-12">
             <!-- title -->
             <div class="flex-1 font-black italic text-blue-400 text-xl">Chirp.</div>
 
             <!-- menu -->
             <ul class="hidden sm:flex justify-end items-center gap-8 text-gray-500">
-                <li>Home</li>
-                <li>Pricing</li>
-                <li>FAQ</li>
-                <button class="bg-blue-400 py-4 px-8 flex rounded text-white font-bold"> <img src="Assets/Twitter.svg"
-                        class="mr-2" alt=""> Sign In with Twitter</button>
+                <li><a class="hover:text-gray-900" href="">Home</a></li>
+                <li><a class="hover:text-gray-900" href="">Pricing</a></li>
+                <li><a class="hover:text-gray-900" href="">FAQ</a></li>
+                <button
+                    class="bg-blue-400 py-4 px-8 flex rounded text-white font-bold hover:bg-blue-300 transition ease-in-out duration-300">
+                    <img src="Assets/Twitter.svg" class="mr-2" alt=""> Sign In with Twitter</button>
             </ul>
 
             <!-- mobile button -->
-            <button class="flex sm:hidden justify-end items-center">
+            <button class="mobile-menu-button flex sm:hidden justify-end items-center">
                 <img src="Assets/Hamburger Menu.svg" alt="">
             </button>
         </nav>
+        <!-- menu moblie-->
+        <ul class="mobile-menu hidden sm:hidden justify-center text-center items-center gap-8 pt-4 text-gray-500">
+            <li><a class="hover:text-gray-900" href="">Home</a></li>
+            <li><a class="hover:text-gray-900" href="">Pricing</a></li>
+            <li><a class="hover:text-gray-900" href="">FAQ</a></li>
+            <button
+                class="bg-blue-400 py-4 px-8 flex rounded text-white font-bold hover:bg-blue-300 transition ease-in-out duration-300">
+                <img src="Assets/Twitter.svg" class="mr-2" alt=""> Sign In with Twitter</button>
+        </ul>
     </header>
     <section class="relative my-8">
         <!-- section-1 -->
-        <div class="container flex flex-col-reverse sm:flex-row">
-            <div class="flex flex-1 flex-col items-center my-8 border border-red-400 ">
-                judul
+        <div class="container flex flex-col-reverse justify-start lg:flex-row gap-12">
+            <div class="flex flex-1 flex-col justify-start my-8 lg:w-3/5 ">
+                <h1 class="text-4xl sm:text-5xl lg:text-6xl font-bold leading-tight">Twitter analytics
+                    taken to a whole new level.</h1>
+                <p class="text-gray-500 font-medium leading-8">Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Perspiciatis temporibus dignissimos error id
+                    repudiandae adipisci eveniet architecto illum! Quisquam ipsum eos reiciendis!</p>
+                <div class="flex flex-col mx-0 py-4 gap-3 justify-start items-center sm:flex-row">
+                    <button
+                        class=" bg-blue-400 flex py-4 px-8 rounded text-white font-bold hover:bg-blue-300 transition ease-in-out duration-300">
+                        <img src="Assets/Twitter.svg" class="mr-2" alt=""> Sign In with Twitter</button>
+                    <a href="#" class="text-blue-800 font-semibold">Learn more →</a>
+                </div>
+
+                <!-- avatar -->
+                <div class="flex justify-start -space-x-5 py-4">
+                    <img src="Assets/userAvatar09.svg" alt="">
+                    <img src="Assets/userAvatar08.svg" alt="">
+                    <img src="Assets/userAvatar07.svg" alt="">
+                    <img src="Assets/userAvatar06.svg" alt="">
+                    <img src="Assets/userAvatar05.svg" alt="">
+                    <img src="Assets/userAvatar04.svg" alt="">
+                    <img src="Assets/userAvatar03.svg" alt="">
+                    <img src="Assets/userAvatar02.svg" alt="">
+                    <img src="Assets/userAvatar01.svg" alt="">
+                </div>
+
+                <p class="text-gray-500 font-medium leading-8">Join 195 others who have analyzed their followers and
+                    scheduled 1342 tweets!</p>
             </div>
-            <div class="flex flex-1 justify-center">
+
+            <!-- button #2 -->
+            <!-- mobile and md-->
+            <div class="flex flex-1 justify-center lg:w-2/5 sm:hidden lg:flex lg:flex-none">
                 <img class="" src="Assets/Hero Image (Desktop View).png" alt="">
+            </div>
+            <!-- sm -->
+            <div class="hidden justify-center sm:flex sm:flex-1 lg:hidden">
+                <img class="" src="Assets/Hero Image (Tablet View).png" alt="">
+            </div>
+        </div>
+    </section>
+    <section class="bg-white">
+        <!-- feature -->
+        <div class="container py-10 space-y-6 grid">
+            <h1 class="font-bold text-3xl w-full sm:w-3/5 md:w-2/6">Feature that help you Tweet smarter.</h1>
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                <div class="p-4 space-y-6 border rounded">
+                    <!-- <img src="Asse" alt=""> -->
+                    <div class="text-3xl">📈</div>
+                    <h1 class="font-bold">Analytics</h1>
+                    <p class="text-gray-500">We constantly monitor your audience as it grows - so you can Tweet when
+                        your followers are most
+                        likely to be online and ready to engage with your content.</p>
+                </div>
+                <div class="p-4 space-y-4 border rounded">
+                    <!-- <img src="Asse" alt=""> -->
+                    <div class="text-3xl">🤓</div>
+                    <h1 class="font-bold">Smart Analyzerytics</h1>
+                    <p class="text-gray-500">Chirp automatically recognizes your followers most active times and
+                        automatically sends you notifications if you're missing out on an opportunity.</p>
+                </div>
+                <div class="p-4 space-y-4 border rounded">
+                    <!-- <img src="Asse" alt=""> -->
+                    <div class="text-3xl">🗞️</div>
+                    <h1 class="font-bold">Schedule Your Tweets</h1>
+                    <p class="text-gray-500">Quality tweets drive tons of engagement. With Chirp, you can write tweets
+                        in an advance and schedule them when your audience is most likely to road.</p>
+                </div>
+                <div class="p-4 space-y-4 border rounded">
+                    <!-- <img src="Asse" alt=""> -->
+                    <div class="text-3xl">🌙</div>
+                    <h1 class="font-bold">Dark Mode</h1>
+                    <p class="text-gray-500">Friendly on the eyes, no matter what time you write your tweets. All colors
+                        are chosen to make sure your eyes are at ease at all times.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="bg-light-blue">
+        <!-- feature -->
+        <div class="container py-10 space-y-6">
+            <h1 class="font-bold text-3xl w-full sm:w-3/5 md:w-2/6">What our customers say</h1>
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-4">
+                <div class="p-4 space-y-4 border rounded bg-white max-h-52">
+                    <!-- head -->
+                    <div class="flex justify-between">
+                        <div class="flex gap-3">
+                            <img src="Assets/userAvatar01.svg" alt="">
+                            <div>
+                                <h1 class="font-bold">Sara May</h1>
+                                <h2 class="text-gray-400">@sara_may</h2>
+                            </div>
+                        </div>
+                        <img src="Assets/Twitter (Blue).svg" alt="">
+                    </div>
+                    <!-- tweet -->
+                    <p class="text-gray-500">I just tried out @chirp and it's amazing, love all the analytics I can see.
+                    </p>
+                    <!-- footer -->
+                    <div class="flex justify-between align-bottom text-gray-500">
+                        <div class="flex gap-2">
+                            <img src="Assets/Like.svg" alt="">
+                            <h2>2</h2>
+                        </div>
+                        <div>
+                            <h2>March 2, 2021</h2>
+                        </div>
+                    </div>
+                </div>
+                <div class="p-4 space-y-4 border rounded bg-white">
+                    <!-- head -->
+                    <div class="flex justify-between">
+                        <div class="flex gap-3">
+                            <img src="Assets/userAvatar02.svg" alt="">
+                            <div>
+                                <h1 class="font-bold">Jack Scott</h1>
+                                <h2 class="text-gray-400">@jackscott_</h2>
+                            </div>
+                        </div>
+                        <img src="Assets/Twitter (Blue).svg" alt="">
+                    </div>
+                    <!-- tweet -->
+                    <p class="text-gray-500">I initially started using Chirp to support the co-founder as I personally
+                        knew him, but after having tried it out for a few weeks, I can genuinely say this changed my
+                        Twitter game.
+                    </p>
+                    <!-- footer -->
+                    <div class="flex justify-between text-gray-500">
+                        <div class="flex gap-2">
+                            <img src="Assets/Like.svg" alt="">
+                            <h2>32</h2>
+                        </div>
+                        <div>
+                            <h2>March 2, 2021</h2>
+                        </div>
+                    </div>
+                </div>
+                <div class="p-4 space-y-4 border rounded bg-white max-h-52">
+                    <!-- head -->
+                    <div class="flex justify-between">
+                        <div class="flex gap-3">
+                            <img src="Assets/userAvatar01.svg" alt="">
+                            <div>
+                                <h1 class="font-bold">Sara May</h1>
+                                <h2 class="text-gray-400">@sara_may</h2>
+                            </div>
+                        </div>
+                        <img src="Assets/Twitter (Blue).svg" alt="">
+                    </div>
+                    <!-- tweet -->
+                    <p class="text-gray-500">I just tried out @chirp and it's amazing, love all the analytics I can see.
+                    </p>
+                    <!-- footer -->
+                    <div class="flex justify-between text-gray-500">
+                        <div class="flex gap-2">
+                            <img src="Assets/Like.svg" alt="">
+                            <h2>2</h2>
+                        </div>
+                        <div>
+                            <h2>March 2, 2021</h2>
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
     </section>
 </body>
+<script>
+    const btn = document.querySelector('button.mobile-menu-button');
+    const menu = document.querySelector('.mobile-menu');
+    btn.addEventListener('click', () => {
+        menu.classList.toggle('hidden');
+        menu.classList.toggle('grid');
+    });
+</script>
 
 </html>
